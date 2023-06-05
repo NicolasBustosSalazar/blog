@@ -1,0 +1,11 @@
+#title{
+    background-color: #262a5f;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#title:hover{
+    
+    background-color: rgb(37, 37, 155);
+}
