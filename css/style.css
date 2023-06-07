@@ -9,6 +9,7 @@ body{
 #titulo:hover{
     color: rgba(0, 255, 0, 0.959);
     box-shadow: 10px;
+    transition: 0.7s;
 }
 #title{
     background-color: #080913;
@@ -21,6 +22,7 @@ body{
 #title:hover{
     
     background-color: rgb(37, 37, 155);
+    transition: 0.7s;
 }
 
 #prime{
@@ -47,6 +49,11 @@ body{
     margin: 15px;
     background-color: #889999;
     border-radius: 25px;
+}
+
+.card:hover{
+    background-color: aqua;
+    transition: 0.7s;
 }
 
 .show{
