@@ -1,6 +1,6 @@
 body{
     margin: 10px;
-    background-color: #393a3b;
+    background-color: #000000;
     border: 5px;
 }
 #titulo{
@@ -14,7 +14,7 @@ body{
     background-color: #080913;
     text-align: center;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     border: 5px;
 }
 
@@ -23,15 +23,29 @@ body{
     background-color: rgb(37, 37, 155);
 }
 section{
-    position: relative;
+    position:relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    order: 0;
+    align-items: stretch;
+    justify-content: center;
+    width: 400px;
     min-height: 400px;
-    padding: 100px 20vw;
-}
-#uno{
-    background-color: aqua;
+    padding: 10px 10vw;
+    background-color: rgb(15, 137, 158);
     border-radius: 25px;
-    
+    margin: 10px;
+}
+
+.card{
+    opacity: 0;
+    transition: all 1.2s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
