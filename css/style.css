@@ -22,26 +22,31 @@ body{
     
     background-color: rgb(37, 37, 155);
 }
-section{
+
+#prime{
     position:relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     order: 0;
     align-items: stretch;
     justify-content: center;
-    width: 400px;
+    
     min-height: 400px;
     padding: 10px 10vw;
-    background-color: rgb(15, 137, 158);
+    background-color: rgb(19, 38, 75);
     border-radius: 25px;
     margin: 10px;
 }
 
 .card{
+    align-items: center;
     opacity: 0;
     transition: all 1.2s;
     filter: blur(5px);
     transform: translateX(-100%);
+    margin: 15px;
+    background-color: #889999;
+    border-radius: 25px;
 }
 
 .show{
@@ -49,3 +54,14 @@ section{
     filter: blur(0);
     transform: translateX(0);
 }
+.post_header{
+    display: flex;
+    align-items: center;
+}
+.post_icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
