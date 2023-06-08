@@ -1,49 +1,54 @@
-body{
-    margin: 10px;
+body {
+    margin: 0px;
     background-color: #000000;
     border: 5px;
 }
-#titulo{
+
+#titulo {
+    font-family: 'Bodoni Moda', serif;
     color: antiquewhite;
 }
-#titulo:hover{
+
+#titulo:hover {
     color: rgba(0, 255, 0, 0.959);
     box-shadow: 10px;
-    transition: 0.7s;
+
 }
-#title{
-    background-color: #080913;
+
+#title {
+    background-color: #2d7aee;
     text-align: center;
     padding: 10px;
-    border-radius: 25px;
+
     border: 5px;
 }
 
-#title:hover{
-    
+#title:hover {
+
     background-color: rgb(37, 37, 155);
-    transition: 0.7s;
+
 }
 
-#prime{
-    position:relative;
+#prime {
+    position: relative;
     display: flex;
     flex-direction: column;
     order: 0;
     align-items: stretch;
     justify-content: center;
-    
+
     min-height: 400px;
     padding: 10px 10vw;
     background-color: rgb(19, 38, 75);
     border-radius: 25px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.card{
+.card {
     align-items: center;
     opacity: 0;
-    transition: all 1.2s;
+    transition: 1.2s;
     filter: blur(5px);
     transform: translateX(-100%);
     margin: 15px;
@@ -51,24 +56,26 @@ body{
     border-radius: 25px;
 }
 
-.card:hover{
+.card:hover {
     background-color: aqua;
-    transition: 0.7s;
+    transition: 0s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
-.post_header{
+
+.post_header {
     display: flex;
     align-items: center;
+
 }
-.post_icon{
+
+.post_icon {
     width: 75px;
     height: 75px;
     border-radius: 15px;
     margin: 5px;
 }
-
