@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-    background-color: #000000;
+    background-color: azure;
     border: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #titulo {
@@ -16,7 +17,9 @@ body {
 }
 
 #title {
-    background-color: #2d7aee;
+    background-color: #000000;
+    border-style: outset;
+    border-color: azure;
     text-align: center;
     padding: 10px;
 
@@ -25,7 +28,7 @@ body {
 
 #title:hover {
 
-    background-color: rgb(37, 37, 155);
+    background-color: rgb(102, 37, 155);
 
 }
 
@@ -36,13 +39,16 @@ body {
     order: 0;
     align-items: stretch;
     justify-content: center;
-
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
     min-height: 400px;
-    padding: 10px 10vw;
-    background-color: rgb(19, 38, 75);
+    /*padding: 10px 10vw;*/
+    background-color: azure;
     border-radius: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .card {
@@ -52,8 +58,10 @@ body {
     filter: blur(5px);
     transform: translateX(-100%);
     margin: 15px;
-    background-color: #889999;
+    background-color: #1700e2;
     border-radius: 25px;
+    border-style: solid;
+    border-color: black;
 }
 
 .card:hover {
@@ -78,4 +86,8 @@ body {
     height: 75px;
     border-radius: 15px;
     margin: 5px;
+}
+
+P {
+    padding-left: 15px;
 }
