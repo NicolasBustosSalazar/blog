@@ -1,9 +1,78 @@
+:root{
+    --text_primary : #b6b6b6;
+    --text_secondary: #ececec;
+    --bg_primary: #23232e;
+    --bg_secondary: #141418;
+
+
+}
+/*General css*/
 body {
     margin: 0px;
-    background-color: azure;
+    padding: 0%;
+    background-color: rgb(164, 174, 174);
     border: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body::-webkit-scrollbar{
+    width: 0.35rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: green;
+}
+/*---------------*/
+
+/*barra de navegacion*/
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg_primary);
+    transition: 200ms;
+}
+
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text_primary);
+    text-decoration: none;
+}
+
+.link-text{
+    display: none;
+}
+
+.navbar:hover{
+    width: 16rem;
+    z-index: 10;
+}
+.navbar:hover .link-text{
+    display: block;
+}
+
+li :hover .link-text{
+    color: aqua;
+}
+
+/*----------------*/
+
+/*Publicaciones*/
 
 #titulo {
     font-family: 'Bodoni Moda', serif;
@@ -22,15 +91,10 @@ body {
     border-color: azure;
     text-align: center;
     padding: 10px;
-
+    
     border: 5px;
 }
 
-#title:hover {
-
-    background-color: rgb(102, 37, 155);
-
-}
 
 #prime {
     position: relative;
@@ -39,15 +103,15 @@ body {
     order: 0;
     align-items: stretch;
     justify-content: center;
-    border-style: solid;
-    border-color: rgb(0, 0, 0);
+    /*border-style: solid;*/
+    /*border-color: rgb(0, 0, 0);*/
     min-height: 400px;
     /*padding: 10px 10vw;*/
-    background-color: azure;
-    border-radius: 25px;
+    background-color: rgb(164, 174, 174);
+    /*border-radius: 25px;*/
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 5px;
+    margin-left: 5rem;
     margin-right: 5px;
 }
 
@@ -58,16 +122,14 @@ body {
     filter: blur(5px);
     transform: translateX(-100%);
     margin: 15px;
-    background-color: #1700e2;
-    border-radius: 25px;
+    background-color: #070042;
+    border-radius: 8px;
     border-style: solid;
     border-color: black;
+    
 }
 
-.card:hover {
-    background-color: aqua;
-    transition: 0s;
-}
+
 
 .show {
     opacity: 1;
@@ -78,7 +140,12 @@ body {
 .post_header {
     display: flex;
     align-items: center;
+    background-color: #242222;
+}
 
+.post_header:hover{     
+    color: green;
+    background-color: #413d3d;
 }
 
 .post_icon {
@@ -87,7 +154,13 @@ body {
     border-radius: 15px;
     margin: 5px;
 }
+.card:hover {
+    background-color: aqua;
+    transition: 0s;
+}
 
 P {
     padding-left: 15px;
 }
+
+/*-----------------*/
