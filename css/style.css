@@ -87,27 +87,32 @@ li :hover .link-text{
 
 #title {
     background-color: #000000;
+    background-image: url("../img/wallpapersden.com_triangle-pattern-digital-art_3200x2560.jpg");
     border-style: outset;
     border-color: azure;
     text-align: center;
     padding: 10px;
-    
+    height: 10vh;
     border: 5px;
 }
 
 
 #prime {
+    background-image: url("../img/Screenshot\ 2023-06-18\ 202741_2.png");
+    background-repeat:repeat-x;
+    padding-left: 10vh;
+    padding-right: 10vh;
     position: relative;
     display: flex;
     flex-direction: column;
     order: 0;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     /*border-style: solid;*/
     /*border-color: rgb(0, 0, 0);*/
     min-height: 400px;
     /*padding: 10px 10vw;*/
-    background-color: rgb(164, 174, 174);
+    background-color: rgb(255, 255, 255);
     /*border-radius: 25px;*/
     margin-top: 10px;
     margin-bottom: 10px;
@@ -116,13 +121,15 @@ li :hover .link-text{
 }
 
 .card {
+    
+    
     align-items: center;
     opacity: 0;
     transition: 1.2s;
     filter: blur(5px);
     transform: translateX(-100%);
     margin: 15px;
-    background-color: #070042;
+    background-color: #e0e0e0;
     border-radius: 8px;
     border-style: solid;
     border-color: black;
@@ -140,12 +147,13 @@ li :hover .link-text{
 .post_header {
     display: flex;
     align-items: center;
-    background-color: #242222;
+    background-color: #000000;
+    color: antiquewhite;
 }
 
 .post_header:hover{     
-    color: green;
-    background-color: #413d3d;
+    color: rgb(0, 255, 0, 0.959);
+    background-color: #2d2d3f;
 }
 
 .post_icon {
