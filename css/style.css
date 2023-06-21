@@ -98,7 +98,7 @@ li :hover .link-text{
 
 
 #prime {
-    background-image: url("../img/Screenshot\ 2023-06-18\ 202741_2.png");
+    /*background-image: url("../img/Screenshot\ 2023-06-18\ 202741_2.png");*/
     background-repeat:repeat-x;
     padding-left: 10vh;
     padding-right: 10vh;
