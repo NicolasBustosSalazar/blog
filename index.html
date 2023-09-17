@@ -11,6 +11,12 @@
   <header></header>
 
   <body>
+    <!-- The `<nav class="navbar">` element is creating a navigation bar. Inside the navigation bar,
+    there is an unordered list `<ul class="navbar-nav">` that contains four list items `<li
+    class="nav-item">`. Each list item represents a link in the navigation bar. The links have a
+    class of "nav-link" and contain a span element with a class of "link-text" that displays the
+    text for each link. The links are currently set to "#" as their href attribute, which means they
+    are not linked to any specific page. -->
     <nav class="navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -40,49 +46,28 @@
         <h1 id="titulo">hola mundo!</h1>
       </div>
     </div>
+    <dialog id="dialog">
+      <form method="dialog">
+        <input type="text" placeholder="nombre" id="input" />
+        <input type="text" placeholder="descripcion" id="descrip" />
+        <input type="text" placeholder="link foto" id="photo" />
+        <div>
+          <button id="guardar">guardar</button>
+          <button id="cancelar">cancelar</button>
+        </div>
+      </form>
+    </dialog>
     <div id="menu">
       <section class="Buttons">
         <button id="NEW">new post</button>
+
         <button id="SEARCH">search</button>
       </section>
     </div>
     <section id="prime">
-      <section class="card" id="uno">
-        <div class="post_header">
-          <img class="post_icon" src="img/fox.png" />
-          <span class="post_title">Nice!</span>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          eligendi nesciunt amet ab distinctio delectus totam esse qui quos
-          aspernatur, dolore doloremque et eaque repudiandae rem dicta similique
-          harum tempora.
-        </p>
-      </section>
-      <section class="card" id="dos">
-        <div class="post_header">
-          <img class="post_icon" src="img/fox.png" />
-          <span class="post_title">Nice!</span>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          eligendi nesciunt amet ab distinctio delectus totam esse qui quos
-          aspernatur, dolore doloremque et eaque repudiandae rem dicta similique
-          harum tempora.
-        </p>
-      </section>
-      <section class="card" id="tres">
-        <div class="post_header">
-          <img class="post_icon" src="img/fox.png" />
-          <span class="post_title">Nice!</span>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          reprehenderit labore nobis, earum iusto voluptatem omnis unde totam,
-          amet dolore vitae quidem adipisci! Fugiat animi impedit magni minus
-          fuga consectetur.
-        </p>
-      </section>
+      <!-- The `<section class="card" id="uno">` element is creating a card section with the ID "uno".
+      This card section represents a post on the blog. It contains a post header with an image and a
+      title, and a paragraph with the content of the post. -->
       <section class="card">
         <div class="post_header">
           <img class="post_icon" src="img/fox.png" />
@@ -105,18 +90,6 @@
           eligendi nesciunt amet ab distinctio delectus totam esse qui quos
           aspernatur, dolore doloremque et eaque repudiandae rem dicta similique
           harum tempora.
-        </p>
-      </section>
-      <section class="card">
-        <div class="post_header">
-          <img class="post_icon" src="img/fox.png" />
-          <span class="post_title">Nice!</span>
-        </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
-          reprehenderit labore nobis, earum iusto voluptatem omnis unde totam,
-          amet dolore vitae quidem adipisci! Fugiat animi impedit magni minus
-          fuga consectetur.
         </p>
       </section>
     </section>

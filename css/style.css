@@ -4,9 +4,10 @@
   --bg_primary: #23232e;
   --bg_secondary: #141418;
 }
+
 /*General css for background color an font*/
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0%;
   background-color: rgb(0, 0, 0);
   border: 5px;
@@ -14,7 +15,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.35rem;
+  width: 0.75rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -23,6 +24,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: rgb(107, 0, 128);
+  border-radius: 8px;
+  width: 0.7rem;
 }
 /*---------------*/
 
@@ -90,8 +93,9 @@ button {
   position: relative;
   padding: 2px;
   border-style: solid;
-  width: 150px;
+  width: 35vw;
   height: 30px;
+  margin-top: 2rem;
 }
 button:active {
   background-color: green;
@@ -129,7 +133,8 @@ button:hover {
   height: 10vh;
   border: 5px;
 }
-
+/*-------popovers-------*/
+/*--------*/
 #prime {
   /*background-image: url("../img/Screenshot\ 2023-06-18\ 202741_2.png");*/
   background-repeat: repeat-x;
@@ -155,8 +160,9 @@ button:hover {
 }
 
 .card {
+  z-index: 1;
   align-items: center;
-  opacity: 0;
+  /* opacity: 0; */
   transition: 1.2s;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -165,8 +171,8 @@ button:hover {
   border-radius: 8px;
   border-style: solid;
   border-color: black;
-  width: 60vw;
-  height: 35vh;
+  width: 40vw;
+  height: 40vh;
   overflow: hidden;
   box-shadow: 10px 10px 0px -2px rgba(35, 35, 46, 0.75);
   -webkit-box-shadow: 10px 10px 0px -2px rgba(35, 35, 46, 0.75);
@@ -207,3 +213,10 @@ P {
 }
 
 /*-----------------*/
+dialog {
+  border-radius: 15px;
+  background-color: darkslateblue;
+  box-shadow: 10px 10px 0px -2px rgba(35, 35, 46, 0.75);
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(35, 35, 46, 0.75);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(35, 35, 46, 0.75);
+}
