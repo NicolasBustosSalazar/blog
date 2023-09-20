@@ -6,18 +6,16 @@
     <title>Nick Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <script defer src="js/main.js"></script>
+    
   </head>
   <header></header>
 
   <body>
-    <!-- The `<nav class="navbar">` element is creating a navigation bar. Inside the navigation bar,
-    there is an unordered list `<ul class="navbar-nav">` that contains four list items `<li
-    class="nav-item">`. Each list item represents a link in the navigation bar. The links have a
-    class of "nav-link" and contain a span element with a class of "link-text" that displays the
-    text for each link. The links are currently set to "#" as their href attribute, which means they
-    are not linked to any specific page. -->
-    <nav class="navbar">
+    
+    <!-- 
+      
       <ul class="navbar-nav">
         <li class="nav-item">
           <a
@@ -56,12 +54,56 @@
           </a>
         </li>
       </ul>
-    </nav>
-    <div id="title">
+    </nav> -->
+      <!-- <div id="title">
       <div class="container">
         <h1 id="titulo">NICK DEV</h1>
       </div>
-    </div>
+    </div> -->
+    <nav id="desktop-nav">
+      <div class="logo">NICK DEV</div>
+      <div>
+        <ul class="nav-links">
+          
+            <li><a href="mailto:nicobustos84@gmail.com"
+            title="nicobustos84@gmail.com"">EMAIL</a></li>
+            <li><a href="Cv-Bustos-Nicolas.pdf"
+            title="Curriculum Vitae">CV</a></li>
+            <li><a href="https://utn.edu.ar/es/"
+            title="Universidad Tecnologica Nacional">UNIVERSITY</a></li>
+            <li><a href="https://github.com/NicolasBustosSalazar"
+            title="Perfil de GitHub">GITHUB</a></li>
+            
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburguer-nav">
+      <div class="logo">NICK DEV</div>
+      <div class="hamburguer-menu">
+        <div class="hamburguer-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li>
+            <a href="#about" onclick="toggleMenu()">About</a>
+          </li>
+          <li>
+            <a href="#expericence" onclick="toggleMenu()">expericence</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu()">projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">contact</a></li>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    
     <dialog id="dialog">
       <form method="dialog">
         <input type="text" placeholder="nombre" id="input" />

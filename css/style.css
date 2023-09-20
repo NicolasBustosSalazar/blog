@@ -5,13 +5,18 @@
   --bg_secondary: #141418;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 /*General css for background color an font*/
 body {
   margin: 0;
   padding: 0%;
   background-color: rgb(0, 0, 0);
   border: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "EB Garamond", serif;
 }
 
 body::-webkit-scrollbar {
@@ -30,12 +35,13 @@ body::-webkit-scrollbar-thumb {
 /*---------------*/
 
 /*barra de navegacion*/
-.navbar {
-  width: 5rem;
+/* .navbar {
+  width: 2rem;
   height: 100vh;
   position: fixed;
   background-color: var(--bg_primary);
   transition: 200ms;
+  z-index: 10;
 }
 
 .navbar-nav {
@@ -69,14 +75,136 @@ body::-webkit-scrollbar-thumb {
 
 li :hover .link-text {
   color: aqua;
-}
-
+} */
 /*----------------*/
 
+/*Nueva barra de navegacion*/
+
+nav,
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  color: antiquewhite;
+  font-size: 2rem;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  background: linear-gradient(
+    23deg,
+    rgba(35, 35, 46, 1) 0%,
+    rgba(0, 0, 0, 1) 85%
+  );
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+#hamburguer-nav {
+  display: none;
+  background: linear-gradient(
+    23deg,
+    rgba(35, 35, 46, 1) 0%,
+    rgba(0, 0, 0, 1) 85%
+  );
+}
+
+.hamburguer-menu {
+  position: relative;
+  display: inline-block;
+  color: antiquewhite;
+}
+
+.hamburguer-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburguer-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #751313;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2d2d3f;
+  border: 2px;
+  border-color: yellow;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: antiquewhite;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+.menu-links.open {
+  max-height: 300px;
+  z-index: 2;
+  border-radius: 5px;
+  border: 2px;
+  border-color: yellow;
+}
+
+.hamburguer-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburguer-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburguer-icon span:first-child {
+  transform: none;
+}
+
+.hamburguer-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburguer-icon span:first-child {
+  transform: none;
+}
 /*botones*/
 a {
   color: #ececec;
+  text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
 #menu {
   display: flex;
   justify-content: center;
@@ -142,6 +270,7 @@ button:hover {
 /*--------*/
 #prime {
   /*background-image: url("../img/Screenshot\ 2023-06-18\ 202741_2.png");*/
+
   background-repeat: repeat-x;
   /*padding-left: 10vh;
   padding-right: 10vh;*/
@@ -153,14 +282,15 @@ button:hover {
   justify-content: center;
   /*border-style: solid;*/
   /*border-color: rgb(0, 0, 0);*/
-  min-height: 400px;
+  /* min-height: 400px; */
+  /* height: 100vh; */
   /*padding: 10px 10vw;*/
   /*background-color: rgb(255, 255, 255);*/
   background-color: #ffffff;
   /*border-radius: 25px;*/
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 1rem;
+  margin-left: 1px;
   margin-right: 1px;
 }
 
