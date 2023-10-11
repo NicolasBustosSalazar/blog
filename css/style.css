@@ -320,6 +320,13 @@ button:hover {
   width: 10rem;
 }
 
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
 #aboutMe {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -352,6 +359,29 @@ button:hover {
   filter: blur(5px);
   transform: translateX(-100%);
   /* min-width: 268px; */
+  border-color: grey;
+  border-width: 2px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.lenguaje {
+  font-size: 1rem;
+}
+.nivel {
+  color: rgb(53, 53, 53);
 }
 
 #socials {
