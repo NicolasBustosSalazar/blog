@@ -144,7 +144,7 @@ nav {
   background-color: #2d2d3f;
   border: 2px;
   border-color: yellow;
-  width: fit-content;
+  width: 300px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -321,9 +321,9 @@ button:hover {
 }
 
 #aboutMe {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   min-width: 268px;
 }
 #P1,
@@ -331,10 +331,35 @@ button:hover {
   color: grey;
 }
 
+#xp {
+  grid-column: 1/2;
+  grid-row: 2;
+  height: 80px;
+}
+#uni {
+  grid-column: 2/3;
+  grid-row: 2;
+  height: 80px;
+}
+.bubble {
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-radius: 8px;
+  transition: 1.2s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  /* min-width: 268px; */
+}
+
 #socials {
   min-width: 280px;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 565px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
 }
 
 #GitHub {

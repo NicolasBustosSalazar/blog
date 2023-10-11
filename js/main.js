@@ -12,7 +12,9 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".card");
 
 hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElements2 = document.querySelectorAll(".bubble");
 
+hiddenElements2.forEach((el) => observer.observe(el));
 const post = document.getElementById("dialog");
 const boton = document.getElementById("NEW");
 

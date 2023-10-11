@@ -5,4 +5,7 @@
   #hamburguer-nav {
     display: flex;
   }
+  .bubble {
+    font-size: small;
+  }
 }
