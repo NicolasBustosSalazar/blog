@@ -286,7 +286,7 @@ button:hover {
   /* height: 100vh; */
   /*padding: 10px 10vw;*/
   /*background-color: rgb(255, 255, 255);*/
-  background-color: #ffffff;
+  background-color: #efefef;
   /*border-radius: 25px;*/
   margin-top: 10px;
   margin-bottom: 10px;
@@ -361,6 +361,15 @@ button:hover {
   /* min-width: 268px; */
   border-color: grey;
   border-width: 2px;
+  background-color: #ffffff;
+  /* width: 600px; */
+}
+
+.bubble:hover {
+  border-color: yellow;
+  color: rgb(51, 182, 51);
+  transition: 0.6s;
+  cursor: crosshair;
 }
 
 .experience {
@@ -398,17 +407,29 @@ button:hover {
   /* background-color: white; */
   /* background-image: url("../img/pngwing.jpg"); */
 }
+#GitHub:hover {
+  background: rgb(121, 0, 119);
+}
 #instagram {
   height: 8rem;
   width: 8rem;
+}
+#instagram:hover {
+  background-color: #fc8be3;
 }
 #linkedin {
   height: 8rem;
   width: 8rem;
 }
+#linkedin:hover {
+  background-color: rgb(0, 140, 255);
+}
 #x {
   height: 8rem;
   width: 8rem;
+}
+#x:hover {
+  background-color: #adadad;
 }
 .show {
   opacity: 1;
@@ -434,10 +455,10 @@ button:hover {
   border-radius: 15px;
   margin: 5px;
 }
-.card:hover {
+/* .card:hover {
   background-color: aqua;
   transition: 0s;
-}
+} */
 
 P {
   padding-left: 15px;
