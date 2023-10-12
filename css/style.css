@@ -316,8 +316,8 @@ button:hover {
 }
 #profilePic {
   border-radius: 50%;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 #about {
@@ -331,7 +331,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  min-width: 268px;
+  min-width: 300px;
 }
 #P1,
 #P2 {
